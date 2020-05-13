@@ -46,5 +46,5 @@ Let's look at how to implement the call to sign up for an account from the React
 
 ## Exercise Instructions
 
-- Implement the call to the `/authenticate` endpoint in `orbit-app/pages/Login.js`.
-- There are three functions in `orbit-app/context/AuthContext.js` where the body is missing. They are `setAuthInfo`, `logout`, `isAuthenticated`. Implement the body for these functions.
+- Implement the call to the `/authenticate` endpoint in `orbit-app/src/pages/Login.js`.
+- There are three functions in `orbit-app/src/context/AuthContext.js` where the body is missing. They are `setAuthInfo`, `logout`, `isAuthenticated`. Implement the body for these functions.
