@@ -23,4 +23,18 @@ The demo app we'll use in the workshop is called Orbit and you can find it [here
 
 ![orbit dashboard](./images/orbit-dashboard.png)
 
-## The Workshop Outline
+## The Exercise Branches
+
+The Orbit repo is split up into branches to support the exercises we'll complete during the workshop. Each module (except for the first one) has a `start` and a `finish` branch.
+
+When starting an excercise, checkout the `start` branch. For example:
+
+```bash
+git checkout 02-start
+```
+
+To see the solution, checkout the `finish` branch:
+
+```bash
+git checkout 02-finish
+```
