@@ -1,4 +1,4 @@
-## JSON Web Tokens
+# JSON Web Tokens
 
 Most non-trivial apps need to get data from a secured API. Many React apps get their data from an API that is secured using [JSON Web Tokens](https://jwt.io). A typical setup, especially for small apps, might look like this:
 
@@ -14,6 +14,20 @@ However, you might be making use of a third-party auth provider like Auth0. If s
 
 - Ability to use across different origins
 - Reduction of database lookups
+
+### How JWTs Protect Your API
+
+You put a middleware on endpoints that should be protected. In that middleware, you verify the signature of the token and the claims in the payload. Valid tokens will pass through that middleware and on to the endpoint itself. Invalid tokens will immediately be rejected with a 401 error or similar.
+
+### JWTs Are Not Sessions
+
+Some developers treat JWTs as they would treat sessions, but they are distinctly different. A traditional session establishes a "link" between the client application and server such that the server more-or-less knows who the client is.
+
+Since JWTs can be sent to servers from anywhere, there's no telling who the holder and sender of the token _actually_ is.
+
+Using cookies and sessions for access is like trying to get into a club and all you have is your ID number. The person working the door needs to go to the back, look you up in their records, cross-check your photo ID with what's in the system, and then they come back to let you in.
+
+Presenting a JWT for access is like trying to get into a club by showing a special card at the door. This special card was signed by the club owner a little while back and this signature proves that its authentic. The person working the door scans it and if its valid, they let you in.
 
 ### JWT and OAuth
 

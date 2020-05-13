@@ -1,4 +1,4 @@
-## Module 1 - Getting Started
+# Module 1 - Getting Started
 
 The goal for this workshop is to get you up to speed with how to think and reason about user authentication and authorization in a React application. To do that, we'll work from a demo app called Orbit.
 
